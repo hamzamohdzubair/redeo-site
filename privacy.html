@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redeo — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  code { font-size: .92em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  .box { border-left: 3px solid currentColor; padding: .1rem 0 .1rem 1rem; opacity: .9; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy for Redeo</h1>
+<p class="sub">Last updated: 27 September 2026</p>
+
+<p class="box">
+  Redeo does not collect, transmit, or share any personal data. It has no internet permission, no
+  accounts, no servers operated by the developer, and no analytics or advertising. Everything you
+  write stays on your device.
+</p>
+
+<h2>What Redeo stores, and where</h2>
+<p>
+  A Redeo card is a question and an answer, both typed by you. Redeo keeps three kinds of data, all
+  in a single database in the app's private storage on your device:
+</p>
+<ul>
+  <li>your cards: the question and answer text, and when each card is next due;</li>
+  <li>a history of your reviews: the date, the score and the resulting schedule;</li>
+  <li>your settings, such as theme, reminders and score thresholds.</li>
+</ul>
+<p>This storage is not readable by other apps. None of it is uploaded anywhere.</p>
+
+<h2>How answers are graded</h2>
+<p>
+  When you write an answer from memory, Redeo compares it with the answer you saved using two
+  methods that both run entirely on your device: a word comparison, and a small language model
+  bundled inside the app. Your answers are never sent to a server for grading, or for any other
+  purpose.
+</p>
+
+<h2>Network access</h2>
+<p>
+  Redeo does not declare the <code>INTERNET</code> permission, so the app itself cannot connect to
+  the internet. The permissions it does declare are:
+</p>
+<ul>
+  <li><code>POST_NOTIFICATIONS</code>, for the optional once-a-day study reminder;</li>
+  <li><code>com.android.vending.BILLING</code>, so the Google Play Store app can handle a
+    subscription purchase;</li>
+  <li><code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code>
+    and <code>ACCESS_NETWORK_STATE</code>, which are added automatically by Android's WorkManager
+    library, used to schedule the reminder. None of these allow Redeo to send data.</li>
+</ul>
+
+<h2>Subscriptions</h2>
+<p>
+  Redeo Pro is sold through Google Play. The purchase is handled entirely by Google Play: Redeo
+  never sees your payment details, and only learns from the Play Store app on your device whether
+  a subscription is active. Google processes purchase information under the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+</p>
+
+<h2>Backups</h2>
+<p>
+  If you have turned on Android's device backup, Android may include Redeo's database in the backup
+  it keeps in your Google account, so your cards can be restored on a new phone. That backup
+  belongs to your Google account and is managed by Android and Google. The developer has no access
+  to it. You can turn backup off in your device's settings.
+</p>
+
+<h2>Data sharing</h2>
+<p>
+  No data is sold, shared, or disclosed to any third party. The developer has no access to your
+  cards, your answers, or your review history.
+</p>
+
+<h2>Deleting your data</h2>
+<ul>
+  <li>Deleting a card inside the app removes the card from your device.</li>
+  <li>Uninstalling Redeo removes its database and everything in it from your device.</li>
+</ul>
+<p>
+  Because nothing is sent to the developer, there is no copy for the developer to delete on your
+  behalf.
+</p>
+
+<h2>Children</h2>
+<p>
+  Redeo is a general-purpose study tool. It is not directed at children under 13 and does not
+  knowingly collect information from them, or from anyone else.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the revised version will be published at this address with an updated
+  date above.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy: <a href="mailto:help.zamzamwala@gmail.com">help.zamzamwala@gmail.com</a>
+</p>
+
+</body>
+</html>

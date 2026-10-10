@@ -24,12 +24,12 @@
 <body>
 
 <h1>Privacy Policy for Redeo</h1>
-<p class="sub">Last updated: 27 September 2026</p>
+<p class="sub">Last updated: 10 October 2026</p>
 
 <p class="box">
-  Redeo does not collect, transmit, or share any personal data. It has no internet permission, no
-  accounts, no servers operated by the developer, and no analytics or advertising. Everything you
-  write stays on your device.
+  Redeo does not collect or share any personal data. It has no accounts of its own, no servers
+  operated by the developer, and no analytics or advertising. Your cards stay on your device, unless
+  you choose to sign in with Google and back them up to your own Google Drive.
 </p>
 
 <h2>What Redeo stores, and where</h2>
@@ -42,7 +42,7 @@
   <li>a history of your reviews: the date, the score and the resulting schedule;</li>
   <li>your settings, such as theme, reminders and score thresholds.</li>
 </ul>
-<p>This storage is not readable by other apps. None of it is uploaded anywhere.</p>
+<p>This storage is not readable by other apps. It is only uploaded if you turn on the Google Drive backup described below.</p>
 
 <h2>How answers are graded</h2>
 <p>
@@ -54,16 +54,17 @@
 
 <h2>Network access</h2>
 <p>
-  Redeo does not declare the <code>INTERNET</code> permission, so the app itself cannot connect to
-  the internet. The permissions it does declare are:
+  Redeo uses the internet for one thing only: the optional Google Drive backup. Grading, studying
+  and everything else work offline. The permissions it declares are:
 </p>
 <ul>
+  <li><code>INTERNET</code>, to sign in with Google and upload or download your backup;</li>
   <li><code>POST_NOTIFICATIONS</code>, for the optional once-a-day study reminder;</li>
   <li><code>com.android.vending.BILLING</code>, so the Google Play Store app can handle a
     subscription purchase;</li>
   <li><code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code>
     and <code>ACCESS_NETWORK_STATE</code>, which are added automatically by Android's WorkManager
-    library, used to schedule the reminder. None of these allow Redeo to send data.</li>
+    library, used to schedule the reminder and the daily backup.</li>
 </ul>
 
 <h2>Subscriptions</h2>
@@ -74,9 +75,36 @@
   <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
 </p>
 
-<h2>Backups</h2>
+<h2>Google sign-in and Drive backup</h2>
 <p>
-  If you have turned on Android's device backup, Android may include Redeo's database in the backup
+  Signing in is optional. If you sign in with Google from Redeo's Backup screen, Redeo asks Google
+  for two things:
+</p>
+<ul>
+  <li>your email address, only to show you which account your backup goes to;</li>
+  <li>access to Redeo's own private app folder in your Google Drive
+    (<code>drive.appdata</code>). This folder is hidden and can only be used by Redeo. Redeo cannot
+    see or change any of your other Drive files.</li>
+</ul>
+<p>
+  While you are signed in, Redeo saves one file to that folder containing your cards, your review
+  history and your settings: at most once a day if something has changed, and whenever you tap
+  "Back up now". The file goes directly from your phone to your own Google Drive. It never passes
+  through a server operated by the developer, and the developer cannot read it. Google stores it
+  under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and it counts
+  towards your Drive storage.
+</p>
+<p>
+  Redeo's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the Limited Use requirements. Your Google data is used only to
+  store and restore your own backup, and is not transferred to anyone else, used for advertising,
+  or read by people.
+</p>
+
+<h2>Android device backup</h2>
+<p>
+  Separately, if you have turned on Android's device backup, Android may include Redeo's database in the backup
   it keeps in your Google account, so your cards can be restored on a new phone. That backup
   belongs to your Google account and is managed by Android and Google. The developer has no access
   to it. You can turn backup off in your device's settings.
@@ -85,13 +113,18 @@
 <h2>Data sharing</h2>
 <p>
   No data is sold, shared, or disclosed to any third party. The developer has no access to your
-  cards, your answers, or your review history.
+  cards, your answers, your review history or your backup.
 </p>
 
 <h2>Deleting your data</h2>
 <ul>
   <li>Deleting a card inside the app removes the card from your device.</li>
   <li>Uninstalling Redeo removes its database and everything in it from your device.</li>
+  <li>Signing out in Redeo stops backups. The last backup stays in your Drive so you can restore it
+    later; to delete it, open Google Drive on the web, go to Settings &rarr; Manage apps, find
+    Redeo, and choose "Delete hidden app data".</li>
+  <li>You can withdraw Redeo's access to your Google account at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
 </ul>
 <p>
   Because nothing is sent to the developer, there is no copy for the developer to delete on your
